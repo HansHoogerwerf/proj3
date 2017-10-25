@@ -1,0 +1,83 @@
+
+
+## EXPIRES CACHING ##
+<ifModule mod_expires.c>  
+        ExpiresActive on
+        ExpiresDefault "access plus 5 seconds"  
+        ExpiresByType image/x-icon "access plus 2592000 seconds"  
+        ExpiresByType image/jpeg "access plus 2592000 seconds"  
+        ExpiresByType image/png "access plus 2592000 seconds"  
+        ExpiresByType image/gif "access plus 2592000 seconds"  
+        ExpiresByType application/x-shockwave-flash "access plus 2592000 seconds"  
+        ExpiresByType text/css "access plus 604800 seconds"  
+        ExpiresByType text/javascript "access plus 216000 seconds"  
+        ExpiresByType application/javascript "access plus 216000 seconds"  
+        ExpiresByType application/x-javascript "access plus 216000 seconds"  
+        ExpiresByType text/html "access plus 600 seconds"  
+        ExpiresByType application/xhtml+xml "access plus 600 seconds" 
+ExpiresByType audio/x-wav "access plus 1 month"
+ExpiresByType audio/mpeg "access plus 1 month"
+ExpiresByType video/mpeg "access plus 1 month"
+ExpiresByType video/mp4 "access plus 1 month"
+ExpiresByType video/quicktime "access plus 1 month"
+ExpiresByType video/x-ms-wmv "access plus 1 month"		
+</ifModule>   
+## EXPIRES CACHING ##
+
+<IfModule pagespeed_module>
+    ModPageSpeed off
+	ModPagespeedRewriteLevel  CoreFilters
+	ModPagespeedEnableFilters prioritize_critical_css
+	ModPagespeedEnableFilters inline_css
+	ModPagespeedEnableFilters combine_css
+	ModPagespeedEnableFilters collapse_whitespace
+	ModPagespeedEnableFilters remove_quotes
+	ModPagespeedEnableFilters remove_comments 
+	ModPagespeedEnableFilters combine_javascript
+	ModPagespeedEnableFilters rewrite_javascript_external
+	ModPagespeedEnableFilters sprite_images
+	ModPagespeedEnableFilters rewrite_images
+	ModPagespeedEnableFilters recompress_png
+	ModPagespeedEnableFilters convert_png_to_jpeg,convert_jpeg_to_webp
+	ModPagespeedEnableFilters resize_mobile_images
+	ModPagespeedEnableFilters resize_images
+	ModPagespeedEnableFilters lazyload_images
+	ModPagespeedEnableFilters inline_google_font_css
+</IfModule> 
+
+<ifModule mod_headers.c>
+ Header set Connection keep-alive
+</ifModule>
+
+
+<FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf)(\.gz)?$">
+Header set Expires "Thu, 15 Apr 2012 20:00:00 GMT"
+Header set Cache-Control "max-age=604800, public"
+Header unset ETag
+FileETag None
+</FilesMatch>
+
+<FilesMatch "xmlrpc\.php$">
+       Require all granted
+ </FilesMatch>
+
+#auto-correct simple URL spelling mistakes
+<IfModule mod_speling.c>
+CheckSpelling on
+</IfModule>
+
+<IfModule deflate_module>
+	<IfModule filter_module>
+		AddOutputFilterByType DEFLATE text/plain text/html
+		AddOutputFilterByType DEFLATE text/xml application/xml application/xhtml+xml application/xml-dtd
+		AddOutputFilterByType DEFLATE application/rdf+xml application/rss+xml application/atom+xml image/svg+xml
+		AddOutputFilterByType DEFLATE text/css text/javascript application/javascript application/x-javascript
+		AddOutputFilterByType DEFLATE font/otf font/opentype application/font-otf application/x-font-otf
+		AddOutputFilterByType DEFLATE font/ttf font/truetype application/font-ttf application/x-font-ttf
+	</IfModule>
+</IfModule>
+
+<files *.html>
+SetOutputFilter DEFLATE
+</files>
+
