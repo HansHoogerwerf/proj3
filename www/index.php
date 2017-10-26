@@ -26,10 +26,10 @@ if(isset($_POST['submit'])){
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Tricylce, Designed for security</title>
-	<meta name="description" content="Tricylce, Designed for security" />
+	<title>Tricylce - Designed for security</title>
+	<meta name="description" content="Tricylce - Designed for security" />
 	<meta name="keywords" content="" />
-	<meta name="author" content="Joey van Venrooij" />
+	<meta name="author" content="TriCycle Security" />
 	<link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
 	<link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png" sizes="32x32">
@@ -80,7 +80,7 @@ if(isset($_POST['submit'])){
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right main-nav">
-					<li><a href="#intro">home</a></li>
+					<li><a href="#intro">Home</a></li>
 					<li><a href="#principles">Principles</a></li>
 					<li><a href="#team">The team</a></li>
 					<li><a href="#pricing">Services</a></li>
@@ -106,7 +106,7 @@ height:925px;
 					<div class="row">
 						<div class="col-md-12 text-center">
 						<img  class="roundr" src="img/tricycle-image-only-white-center.png" style="height:120px;"></img></br>
-							<img src="img/logotextwhite.png" style="height:120px;"></img></br>
+							<img src="img/logotextwhite.png" style="width:80%; max-width:300px;"></img></br>
 							<h2 class="white typed">Designed for security</h2>
 							<span class="typed-cursor">|</span>
 						</div>
@@ -138,7 +138,7 @@ height:925px;
 							<img src="img/icons/fastforward-blue.png" alt="" class="icon">
 						</div>
 						<h4 class="heading">Always ready</h4>
-						<p class="description">We will always be ready when you need us so go ahead and contact us at the top of the page</p>
+						<p class="description">We will always be ready when you need us, so go ahead and contact us at the top of the page!</p>
 					</div>
 				</div>
 				<div class="col-md-4">
@@ -158,7 +158,7 @@ height:925px;
 		<div class="container">
 			<div class="row title text-center">
 				<h2 class="margin-top">The team</h2>
-				<h4 class="light muted">Who  are we?</h4>
+				<h4 class="light muted">Who are we?</h4>
 			</div>
 			<div class="row">
 				<div class="col-md-12 center-block">
@@ -172,7 +172,7 @@ height:925px;
 						
 						<div class="title">
 							<h4></h4>
-							<h5 class="muted regular">We are a team of six students doing a computer security minor at hogeschool Rotterdam. We are all very enthusiastic about all of the projects and many of seek a future in security. Because we still seek a future in security we go the extra step to make a name for ourselves. We will be available whenever we do not have classes and are happy to be contacted about interesting projects even outside of the minor.</h5>
+							<h5 class="muted regular" style="padding: 7px">We are a team of six students doing a Information Security minor at the Rotterdam University of Applied Sciences. We are all very enthusiastic about all of the projects and many of seek a future in security. Because we still seek a future in security we go the extra step to make a name for ourselves. We will be available whenever we do not have classes and are happy to be contacted about interesting projects even outside of the minor.</h5>
 						</div>
 						<a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-blue-fill ripple">Contact us</a>
 					</div>
@@ -188,35 +188,33 @@ height:925px;
 			<div class="row no-margin">
 				<div class="col-md-7 no-padding col-md-offset-5 pricings text-center">
 					<div class="pricing">
-						<div class="box-main active" data-img="img/pricing1.jpg">
-							<h4 class="white">Code audit</h4>
-							
-							<a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-white-fill">Contact us</a>
-							<i class="info-icon icon_question"></i>
-						</div>
-						<div class="box-second active">
-							<ul class="white-list text-left">
-								<li>Quick scanning</li>
-								<li>Need source code</li>
-								<li>White box</li>
-								<li>Support many languages</li>
-								<li>Can go further with pentests</li>
-							</ul>
-						</div>
-					</div>
-					<div class="pricing">
 						<div class="box-main" data-img="img/pricing1.jpg">
-							<h4 class="white">Pen test</h4>
+							<h4 class="white">Code Audit</h4>
+							
 							<a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-white-fill">Contact us</a>
 							<i class="info-icon icon_question"></i>
 						</div>
 						<div class="box-second">
 							<ul class="white-list text-left">
-								<li>from white to black box</li>
-								<li>Continues updates</li>
-								<li>Specify how deep we can go</li>
-								<li>Multiple techniques</li>
-								<li>Will ask before hand</li>
+								<li>Comprehensive analysis</li>
+								<li>Dependency Check</li>
+								<li>Static & Dynamic analysis</li>
+								<li>Support for many programming languages</li>
+							</ul>
+						</div>
+					</div>
+					<div class="pricing">
+						<div class="box-main" data-img="img/pricing1.jpg">
+							<h4 class="white">Penetration Test</h4>
+							<a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-white-fill">Contact us</a>
+							<i class="info-icon icon_question"></i>
+						</div>
+						<div class="box-second">
+							<ul class="white-list text-left">
+								<li>From white- to blackbox</li>
+								<li>Identify security vulnerabilities</li>
+								<li>Governance, Risk & Compliance</li>
+								<li>Social Engineering campaigns</li>
 							</ul>
 						</div>
 					</div>
@@ -255,7 +253,7 @@ height:925px;
 			<div class="modal-content modal-popup">
 				<a href="#" class="close-link"><i class="icon_close_alt2"></i></a>
 				<h3 class="white">Contact</h3>
-				<h4 class="white">Phone: 06 34 866 062</h3>
+				<h4 class="white">Phone: +31 634 866 062</h3>
 				<form action="" class="popup-form" method="post">
 					<input type="text" required="required" class="form-control form-white" placeholder="Name" name="name">
 					<input type="email" required="required" class="form-control form-white" placeholder="E-mail" name="email" >
@@ -281,35 +279,37 @@ height:925px;
 	<script src="js/jquery.onepagenav.js"></script>
 	<script src="js/main.js"></script>
 	
-		<!-- scripts -->
+	<!-- scripts -->
 	<script src="js/particles.js"></script>
 	<script src="js/app.js"></script>
 
 	<!-- stats.js -->
 	<script src="js/lib/stats.js"></script>
-		<script src="js/jqueryrotate.js"></script>
+	<script src="js/jqueryrotate.js"></script>
 	<script>
-	particlesJS.load('particles-js', 'particles.json', function() {
-		console.log('callback - particles.js config loaded');
-});
-	particlesJS.load('particles-jss', 'particles.json', function() {
-		console.log('callback - particles.js config loaded');
-});
 
-$(document).ready(function() {
-var rotation = function (){
-  $(".roundr").rotate({
-	  duration:3000,
-    angle:0,
-    animateTo:360,
-	wait: 5,
-    callback: rotation
-  });
-}
-rotation();
-});
-</script>
+		var init = true;
 
+		particlesJS.load('particles-js', 'particles.json', function() {
+			console.log('callback - particles.js config loaded');
+		});
+
+		particlesJS.load('particles-jss', 'particles.json', function() {
+			console.log('callback - particles.js config loaded');
+		});
+
+		$(document).ready(function() {
+			var rotation = function (){
+		 			$(".roundr").rotate({
+						duration:3000,
+		    			angle:0,
+		    			animateTo:360,
+						wait: 5,
+		    			//callback: rotation
+		  			});
+			}
+			rotation();
+		});
+	</script>
 </body>
-
 </html>
