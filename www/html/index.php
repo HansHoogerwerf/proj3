@@ -230,7 +230,7 @@ height:925px;
 					<div class="owl-twitter owl-carousel">
 						<div class="item text-center">
 							<i class="icon fa fa-certificate"></i>
-							<h4 class="white light">The true computer hackers follow a certain set of ethics that forbids them to profit or cause harm from their activities.</h4>
+							<h4 class="white light">“The true computer hackers follow a certain set of ethics that forbids them to profit or cause harm from their activities.”</h4>
 							<h4 class="light-white light">Kevin Mitnick</h4>
 						</div>
 						<div class="item text-center">
