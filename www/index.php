@@ -166,7 +166,7 @@ height:925px;
 						<div class="cover" style="background:url('img/team/team-cover1.jpg'); background-size:cover;">
 							<div class="overlay text-center">
 								<img src="img/logotextwhite.png" style="height:100px;"></img></br>
-								<h5 class="light light-white">Students with a plan for the future</h5>
+								<h5 class="light light-white">Students with a plan for a secure future</h5>
 							</div>
 						</div>
 						
