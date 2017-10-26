@@ -212,7 +212,7 @@ height:925px;
 						<div class="box-second">
 							<ul class="white-list text-left">
 								<li>From white- to blackbox</li>
-								<li>Identify security vulnerabilities</li>
+								<li>Identify and solve security vulnerabilities</li>
 								<li>Governance, Risk & Compliance</li>
 								<li>Social Engineering campaigns</li>
 							</ul>
