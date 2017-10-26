@@ -92,14 +92,7 @@ if(isset($_POST['submit'])){
 		<!-- /.container-fluid -->
 	</nav>
 	<header id="intro">
-		<div id="particles-js" style="    position: absolute;
-    width: 100%;
-height:925px;
-   z-index:20;
-    background-position: 50% 50%;
-   
-	"></div>
-
+		<div id="particles-js" style="position: absolute; width: 100%; height:925px; z-index:20; background-position: 50% 50%;"></div>
 		<div class="container">
 			<div class="table">
 				<div class="header-text">
